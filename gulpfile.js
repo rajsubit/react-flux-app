@@ -10,7 +10,7 @@ var concat = require('gulp-concat'); // concatenates files
 var lint = require('gulp-eslint'); // lint js files including JSX
 
 var config = {
-	port: 9005,
+	port: 9008,
 	devBaseUrl: 'http://localhost',
 	paths: {
 		html: './src/*.html',
@@ -18,7 +18,8 @@ var config = {
 		images: './src/images/*',
 		css: [
 			'node_modules/bootstrap/dist/css/bootstrap.min.css',
-			'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
+			'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
+			'node_modules/toastr/toastr.css'
 		],
 		dist: './dist',
 		mainJs: './src/main.js'
